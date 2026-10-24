@@ -1,13 +1,13 @@
 {
 	"id": "fallen-warriors",
-	"title": "Fallen Warriors",
+	"title": "PvP vs Fallen Warriors",
 	"version": "2.0.0",
 	"description": "Adds harder (and funnier) versions of all DLC PvP Arena Fights. Pair with the Get on my Level NG+ mod for best results.",
 	"icons": {
 		"24": "icon-24.png"
 	},
 	"authors": "fatetraitor",
-	"tags": ["boss", "arena", "fun"],
+	"tags": ["pvp duel", "boss", "arena", "fun"],
 	"repository": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod",
 	"dependencies": {
 		"ccloader": ">=2.24.0",
