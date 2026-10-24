@@ -1,0 +1,19 @@
+{
+    "cups": [
+        {
+            "fallen-apollo-cup": {
+                "order": 10000
+            }
+        },
+        {
+            "fallen-lily-cup": {
+                "order": 10001
+            }
+        },
+        {
+            "fallen-shizuka-cup": {
+                "order": 10002
+            }
+        }
+    ]
+}
