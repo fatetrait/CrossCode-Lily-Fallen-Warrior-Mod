@@ -4228,10 +4228,6 @@
     "actions": {
         "Idle": [
             {
-                "party": "PLAYER",
-                "type": "SET_COMBATANT_PARTY"
-            },
-            {
                 "value": true,
                 "type": "FACE_TO_TARGET"
             },
@@ -4242,10 +4238,6 @@
             }
         ],
         "SlowWalk": [
-            {
-                "party": "PLAYER",
-                "type": "SET_COMBATANT_PARTY"
-            },
             {
                 "type": "ENABLE_REACTION",
                 "reaction": "DOOOOOOODGE"
@@ -4272,19 +4264,11 @@
         ],
         "BattleIdle": [
             {
-                "party": "PLAYER",
-                "type": "SET_COMBATANT_PARTY"
-            },
-            {
                 "value": true,
                 "type": "FACE_TO_TARGET"
             }
         ],
         "IdleRun": [
-            {
-                "party": "PLAYER",
-                "type": "SET_COMBATANT_PARTY"
-            },
             {
                 "type": "CONSUME_SP",
                 "sp": -0.01
@@ -4521,10 +4505,6 @@
         ],
         "GetClose": [
             {
-                "party": "PLAYER",
-                "type": "SET_COMBATANT_PARTY"
-            },
-            {
                 "type": "ENABLE_REACTION",
                 "reaction": "DOOOOOOODGE"
             },
@@ -4548,10 +4528,6 @@
             }
         ],
         "MoveSidways": [
-            {
-                "party": "PLAYER",
-                "type": "SET_COMBATANT_PARTY"
-            },
             {
                 "value": false,
                 "type": "FACE_TO_TARGET"
