@@ -81,15 +81,6 @@
         "x": 2,
         "y": 2
     },
-    "annotate": {
-        "active": "NONE",
-        "passive": "IMMUNE",
-        "weapon": "RANGED",
-        "element": "ANY",
-        "extra": [
-            "BE_PASSIVE"
-        ]
-    },
     "material": "ORGANIC",
     "aiGroup": "",
     "aiLearnType": "REGULAR",
@@ -172,13 +163,6 @@
         }
     },
     "states": {
-        "DEFAULT_SUMMON": {
-            "choices": [
-                {
-                    "action": "GetTargetInitial"
-                }
-            ]
-        },
         "DEFAULT": {
             "choices": [
                 {
@@ -210,19 +194,6 @@
                     ],
                     "action": "JumpDistance",
                     "ignoreStun": true
-                },
-                {
-                    "req": [
-                        {
-                            "negated": false,
-                            "type": "!HAS_TARGET"
-                        }
-                    ],
-                    "sub": [
-                        {
-                            "action": "GetTarget"
-                        }
-                    ]
                 },
                 {
                     "req": [
@@ -4548,48 +4519,7 @@
                 "type": "NAVIGATE_SIDEWAYS_TARGET"
             }
         ],
-        "GetTargetInitial": [
-            {
-                "stateReset": false,
-                "type": "DO_ENEMY_ACTION_INLINE",
-                "actionName": "GetTarget"
-            },
-            {
-                "type": "SET_ENEMY_STATE",
-                "enemyState": "DEFAULT"
-            }
-        ],
-        "GetTarget": [
-            {
-                "name": "isSummoned",
-                "type": "SET_ATTRIB_BOOL",
-                "value": true
-            },
-            {
-                "poiFilter": {
-                    "self": "LAST_RESORT",
-                    "type": "ACTIVE_ENEMIES"
-                },
-                "distance": 1000,
-                "type": "SET_POI_TEMP_TARGET"
-            },
-            {
-                "type": "ACTUALIZE_TARGET"
-            }
-        ],
         "InitStrat": [
-            {
-                "withElse": false,
-                "type": "IF",
-                "condition": "entity.attrib.isSummoned",
-                "thenStep": [
-                    {
-                        "stateReset": false,
-                        "type": "DO_ENEMY_ACTION_INLINE",
-                        "actionName": "GetTarget"
-                    }
-                ]
-            },
             {
                 "name": "melee",
                 "type": "SET_ATTRIB_BOOL",
@@ -5486,18 +5416,6 @@
             }
         ],
         "_ThrowBalls": [
-            {
-                "withElse": false,
-                "type": "IF",
-                "condition": "entity.attrib.isSummoned",
-                "thenStep": [
-                    {
-                        "stateReset": false,
-                        "type": "DO_ENEMY_ACTION_INLINE",
-                        "actionName": "GetTarget"
-                    }
-                ]
-            },
             {
                 "value": true,
                 "type": "FACE_TO_TARGET"

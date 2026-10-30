@@ -4607,10 +4607,9 @@
                     "type": "ACTIVE_ENEMIES"
                 },
                 "distance": 1000,
-                "type": "SET_POI_TEMP_TARGET"
-            },
-            {
-                "type": "ACTUALIZE_TARGET"
+                "type": "SET_POI_TEMP_TARGET",
+                "commentforcomment": "the below should be called after this poi command for reimplement",
+                "comment": "ACTUALIZE_TARGET"
             }
         ],
         "InitStrat": [
